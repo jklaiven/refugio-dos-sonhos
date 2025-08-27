@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Refúgio dos Sonhos — Reservas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header><h1>Refúgio dos Sonhos</h1></header>
+
+    <section id="rooms">
+      <h2>Quartos</h2>
+      <div id="roomsList"></div>
+    </section>
+
+    <div id="msg"></div>
+
+    <!-- Modal simples para reservar -->
+    <div id="modal" class="hidden">
+      <div class="modal-content">
+        <h3>Reservar Quarto <span id="modalRoomNumber"></span></h3>
+        <form id="reserveForm">
+          <input id="roomId" type="hidden">
+          <input id="name" placeholder="Seu nome" required>
+          <input id="email" placeholder="Seu email" required>
+          <input id="phone" placeholder="Telefone">
+          <label>Check-in <input id="checkin" type="date" required></label>
+          <label>Check-out <input id="checkout" type="date" required></label>
+          <button type="submit">Confirmar reserva</button>
+          <button type="button" id="cancelBtn">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <script src="main.js"></script>
+</body>
+</html>
